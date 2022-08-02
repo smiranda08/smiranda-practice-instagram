@@ -17,8 +17,8 @@ import { useState } from 'react'
 export default function App() {
     const authUser = useAuthListener()
     const { currentUserDoc, setcurrentUserDoc } = useUserListener(authUser)
-    const authenticated = authUser == undefined ? false : true
     const [progress, setprogress] = useState(0)
+    const authenticated = authUser === undefined ? false : true
 
     return (
         <AuthContext.Provider

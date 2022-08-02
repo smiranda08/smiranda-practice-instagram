@@ -25,13 +25,13 @@ export default function SuggestedProfile({ suggestedProfile }) {
                     className="rounded-full w-8 h-8 flex mr-3"
                 />
                 <Link to={`/p/${suggestedProfile.username}`}>
-                    <p className="font-semibold text-sm">
+                    <p className="font-medium text-sm">
                         {suggestedProfile.username}
                     </p>
                 </Link>
             </div>
             <button
-                className="text-sm font-semibold text-blue-medium"
+                className="text-xs font-semibold text-blue-medium"
                 type="button"
                 onClick={handleFollow}
             >

@@ -45,29 +45,41 @@ export default function Header() {
                         <div className="text-gray-700 text-center flex items-center align-items gap-6">
                             {authUser ? (
                                 <>
-                                    <Link
-                                        to={ROUTES.DASHBOARD}
-                                        aria-label="Dashboard"
-                                        replace
+                                    <button
+                                        type="button"
+                                        onClick={() =>
+                                            navigate(ROUTES.DASHBOARD)
+                                        }
                                     >
                                         <AiFillHome />
-                                    </Link>
-                                    <RiMessengerLine />
-                                    <FiPlusSquare />
-                                    <MdOutlineExplore />
-                                    <AiOutlineHeart
-                                        type="button"
-                                        onClick={console.log('clicked!!')}
-                                    />
-
+                                    </button>
+                                    <button type="button">
+                                        <RiMessengerLine />
+                                    </button>
+                                    <button type="button">
+                                        <FiPlusSquare />
+                                    </button>
+                                    <button type="button">
+                                        <MdOutlineExplore />
+                                    </button>
+                                    <button type="button">
+                                        <AiOutlineHeart
+                                            type="button"
+                                            onClick={console.log('clicked!!')}
+                                        />
+                                    </button>
+                                    {/* this one is the small avatar thing */}
                                     <div className="flex items-center cursor-pointer">
-                                        <Link to={`/p/${authUser.displayName}`}>
+                                        <button
+                                            type="button"
+                                            onClick={signOutUser}
+                                        >
                                             <img
                                                 className="rounded-full h-8 w-8 flex border-gray-50 border"
                                                 src={`/images/avatars/${authUser.displayName}.jpg`}
                                                 alt={`${authUser.displayName} profile`}
                                             />
-                                        </Link>
+                                        </button>
                                     </div>
                                 </>
                             ) : (

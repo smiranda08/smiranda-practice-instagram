@@ -11,7 +11,7 @@ const Header = ({ username }) => {
                         alt={`${username} profile picture`}
                         className="rounded-full h-8 w-8 flex mr-3"
                     />
-                    <p className="font-semibold text-sm">{username}</p>
+                    <p className="font-medium text-sm">{username}</p>
                 </Link>
             </div>
             <div className="cursor-pointer select-none p-2">

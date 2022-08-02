@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types'
-import { Route, Navigate } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import * as ROUTES from '../Constants/routes'
 
 const ProtectedRoute = ({ path, authenticated, authUser, children }) => {
-    if (!authenticated) {
-        return null
-    }
-    if (path == ROUTES.DASHBOARD) {
+    console.log(path)
+    console.log('authenticated', authenticated)
+    console.log('authUser', authUser)
+
+    if (authenticated && path === ROUTES.DASHBOARD) {
         return authUser ? children : <Navigate to={ROUTES.LOGIN} replace />
     }
 
-    if (path == ROUTES.LOGIN || path == ROUTES.SIGNUP) {
+    if (path === ROUTES.LOGIN || path === ROUTES.SIGNUP) {
         return authUser ? <Navigate to={ROUTES.DASHBOARD} replace /> : children
     }
 }

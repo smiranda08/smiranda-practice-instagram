@@ -76,8 +76,8 @@ const DisplayContent = ({ userData, totalPhotos }) => {
                 <p className="font-semibold text-gray-800 whitespace-normal">
                     {userData.fullName}
                 </p>
-                <p className="text-gray-400">Musician</p>
-                <p className="">Insert biography here</p>
+                <p className="text-gray-400">Profile title here</p>
+                <p className="">Profile biography here</p>
             </div>
         </div>
     )

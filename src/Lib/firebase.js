@@ -109,11 +109,11 @@ const users = [
  */
 
 const seedPhotos = () => {
-    for (let i = 1; i <= 5; ++i) {
+    for (let i = 1; i <= 12; ++i) {
         addPhoto({
             photoId: i,
-            userId: 'bXS1lGPSCKRIqBhl8ua0dnMJw1a2',
-            imageSrc: `/images/users/dean96/${i}.jpg`,
+            userId: 'eJroefLZwNYROza2VRWx5Qh3be32',
+            imageSrc: `/images/users/croatiaphotography/${i}.jpg`,
             caption: 'insert caption',
             likes: [],
             comments: [],
@@ -123,7 +123,5 @@ const seedPhotos = () => {
         })
     }
 }
-
-//seedPhotos()
 
 export { app as firebase, db, addUser, auth }

@@ -18,8 +18,8 @@ export default function User({ username, fullName }) {
                 </Link>
             </div>
             <div className="col-span-3">
-                <p className="font-semibold text-sm">{username}</p>
-                <p className="text-gray-400">{fullName}</p>
+                <p className="font-medium text-sm">{username}</p>
+                <p className="text-gray-400 text-sm">{fullName}</p>
             </div>
         </Link>
     )

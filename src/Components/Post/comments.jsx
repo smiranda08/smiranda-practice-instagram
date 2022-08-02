@@ -10,12 +10,12 @@ const Comments = ({ docID, comments: allComments, posted, commentInput }) => {
     return (
         <>
             <div className="px-4 mt-1 mb-1">
-                {comments.length >= 1 && (
+                {comments.length >= 3 && (
                     <p className="text-gray-500 cursor-pointer">
                         View all {comments.length} comments
                     </p>
                 )}
-                <div className="mt-1 text-gray-600">
+                <div className="mt-1 text-gray-900">
                     {comments.slice(0, 3).map((item) => (
                         <p
                             key={`${item.comment} - ${item.displayName}`}

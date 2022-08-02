@@ -34,12 +34,12 @@ const Login = () => {
     }, [])
 
     return (
-        <div className="container flex mx-auto max-w-screen-md items-center h-screen backgroun">
-            <div className="flex w-3/5">
+        <div className="container flex mx-auto max-w-screen-md items-center h-screen background">
+            <div className="flex w-3/6">
                 <img src="/images/iphone-with-profile.jpg" alt="iPhone photo" />
             </div>
-            <div className="flex flex-col w-2/5">
-                <h1 className="flex justify-center w-full">
+            <div className="flex flex-col w-3/6 bg-white border px-10 py-20">
+                <h1 className="flex justify-center w-full mb-8">
                     <img src="/images/logo.png" alt="Instagram" />
                 </h1>
                 {error && (
@@ -51,9 +51,9 @@ const Login = () => {
                     <form onSubmit={handleLogin} method="POST">
                         <input
                             type="text"
-                            aria-label="Enter your emailAddress address"
+                            aria-label="Enter your email address"
                             placeholder="Email address"
-                            className="mt-2 text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2"
+                            className="mt-2 text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary bg-gray-background rounded mb-2"
                             onChange={({ target }) => setEmail(target.value)}
                             value={emailAddress}
                         />
@@ -61,7 +61,7 @@ const Login = () => {
                             type="password"
                             aria-label="Enter your password"
                             placeholder="Password"
-                            className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2"
+                            className="text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border border-gray-primary rounded mb-2 bg-gray-background"
                             onChange={({ target }) => setPassword(target.value)}
                             value={password}
                         />
@@ -76,11 +76,11 @@ const Login = () => {
                         </button>
                     </form>
                     <div className="flex justify-center mt-4 items-center flex-col w-full bg-white p-2 border rounded border-gray-primary">
-                        <p className="text-bold ">
+                        <p className="font-light">
                             {"Don't have an account? "}
                             <Link
                                 to={`../${ROUTES.SIGNUP}`}
-                                className="font-semibold"
+                                className="font-medium text-blue-medium"
                             >
                                 Sign up
                             </Link>

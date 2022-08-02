@@ -5,15 +5,19 @@ const ProfilePhotos = ({ userId, photos }) => {
     const profilePhotos = photos
     const renderPhoto = (photo) => {
         return (
-            <div className="w-[19rem] h-[19rem] overflow-hidden aspect-square">
-                <img
-                    src={photo.imageSrc}
-                    alt="profile photo"
-                    className="w-full object-cover aspect-square"
-                />
+            <div className="w-[19rem] h-[19rem] overflow-hidden aspect-square cursor-pointer">
+                <button type="button" onClick={handleClick}>
+                    <img
+                        src={photo.imageSrc}
+                        alt="profile photo"
+                        className="w-full object-cover aspect-square"
+                    />
+                </button>
             </div>
         )
     }
+
+    const handleClick = () => {}
 
     return profilePhotos ? (
         <div className="flex justify-center">
