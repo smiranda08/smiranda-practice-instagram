@@ -16,7 +16,7 @@ in React which integrated prior React basics learnt in separate sandbox projects
 in JSX, using React Hooks and the Context API and heavy styling using Tailwind. 
 
 ### Commentary
-Not all the functionality of Instagram has been implemented in this project hence it being a pseudoclone. There are many buttons (especially in the profile pages)
+Not all the functionality of Instagram has been implemented in this project hence it being a pseudoclone. There are a few buttons (especially in the profile pages)
 which are not functional and serve only at this point to show a visual template of the user interface. The biggest point of difference between this project
 and the real Instagram application is that this application is really only a photo displayer that displays a fixed collection of photos which are stored in the public/images folder. 
 Which means that in order to add new photos to a users collection the new photos will need to be manually added to the public/images/[username] folder, true photo
