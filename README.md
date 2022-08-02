@@ -38,3 +38,6 @@ Demo these profiles
 - [Japan Photography](https://smiranda-practice-project-ig.vercel.app/p/japanphotography)  
 
 
+Disclaimer: This project is intended only for educational purposes. All trademarks and copyrights belong to the original holders.
+
+
