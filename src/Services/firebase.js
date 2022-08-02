@@ -92,6 +92,18 @@ export const followUserBackwards = async (sourceID, targetDocID) => {
     })
 }
 
+export const unfollowForwards = async (targetID, sourceDocID) => {
+    await updateDoc(doc(db, 'users', sourceDocID), {
+        following: arrayRemove(targetID),
+    })
+}
+
+export const unfollowBackwards = async (sourceID, targetDocID) => {
+    await updateDoc(doc(db, 'users', targetDocID), {
+        followers: arrayRemove(sourceID),
+    })
+}
+
 // for each photo in the photos collection, need to check whether the userID of photo is in following
 // if so, then this photo is included
 
