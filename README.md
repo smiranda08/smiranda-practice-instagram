@@ -11,8 +11,7 @@ a sidebar of suggested users to follow based on a simple algorithm which recomme
 - Vercel
 
 ## Objectives
-The main objective of this practice project was to figure out and integrate the fundamentals of coding in React. This was the first proper nontrivial project I have done
-in React which integrated prior React basics learnt in separate sandbox projects such as routing, authentication, database API calls, async/await programming, working
+The main objective of this practice project was to figure out and integrate the fundamentals of coding in React. This was the first proper nontrivial project I have done in React which brought together the basics of routing, authentication, database API calls, async/await programming, working
 in JSX, using React Hooks and the Context API and heavy styling using Tailwind. 
 
 ## Demo the project
